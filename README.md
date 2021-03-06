@@ -1,7 +1,7 @@
 # css-image-gallery-layout 
  CSS is used to set the dimensions and background color for each <figure> element.  The
 dimensions of the images themselves are also set using CSS.
-# Create css
+# Create css image layout
   A background texture is applied to the whole page by repeating an
 image with the texture behind the <body> element. A repeating
 background image is sometimes referred to as wallpaper.
