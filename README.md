@@ -1,1 +1,105 @@
-# css-image-gallery-layout
+# css-image-gallery-layout 
+ CSS is used to set the dimensions and background color for each <figure> element.  The
+dimensions of the images themselves are also set using CSS.
+# Create css
+  A background texture is applied to the whole page by repeating an
+image with the texture behind the <body> element. A repeating
+background image is sometimes referred to as wallpaper.
+The content of the page is put inside a <div> element . This is used to fix the width of the page to 720 pixels. Its left
+and right margins are set to auto to center it in the middle of the screen.
+The images sit inside an HTML5 <figure> element, and their captions
+are provided in the <figcaption> element.For the captions, a background image is used to the left of the text. We
+do not want this image to fill the background so we specify that it should
+not repeat. Padding is used to the left of the text so that the words do
+not go over the background image.
+Each of the <figure> elements is contained within a <div>, which has
+two purposes. Firstly, it is used to create the three-column layout by
+specifying a width and margins for the element and then floating it to
+the left. Secondly, it adds a subtle shadow underneath each image. This
+creates a three-dimensional appearance making it look like a piece of
+card. To ensure that this sits underneath the image, the backgroundposition property is used.
+Like for an example:
+  <!DOCTYPE html>
+<html>
+<head>
+ <title>Images</title>
+ <style type="text/css">
+ body {
+ color: #665544;
+ background-color: #d4d0c6;
+ background-image: url("images/backdrop.gif");
+ font-family: Georgia, "Times New Roman", serif;
+ text-align: center;}
+ .wrapper {
+ width: 720px;
+ margin: 0px auto;}
+ .header {
+ margin: 40px 0px 20px 0px;}
+ .entry {
+ width: 220px;
+ float: left;
+ margin: 10px;
+ height: 198px;
+ background-image: url("images/shadow.png");
+ background-repeat: no-repeat;
+ background-position: bottom;}
+ figure {
+ display: block;
+ width: 202px;
+ height: 170px;
+ background-color: #e7e3d8;
+ padding: 9px;
+ text-align: left;}
+ figure img {
+ width: 200px;
+ height: 150px;
+ border: 1px solid #d6d6d6;}
+ figcaption {
+ background-image: url("images/icon.png");
+ padding-left: 20px;
+ background-repeat: no-repeat;}
+ </style>
+IMAGES 424
+Example
+IMAGES
+</head>
+<body>
+ <div class="wrapper">
+ <div class="header">
+ <img src="images/title.gif" alt="Galerie Botanique" width="456" height="122" />
+ <p>Here is a selection of antique botanical prints held in our collection.</p>
+ </div>
+ <div class="entry">
+ <figure><img src="images/print-01.jpg" alt="Helianthus" />
+ <figcaption>Helianthus</figcaption>
+ </figure>
+ </div>
+ <div class="entry">
+ <figure><img src="images/print-02.jpg" alt="Passiflora" />
+ <figcaption>Passiflora</figcaption>
+ </figure>
+ </div>
+ <div class="entry">
+ <figure><img src="images/print-03.jpg" alt="Nyctocalos" />
+ <figcaption>Nyctocalos</figcaption>
+ </figure>
+ </div>
+ <div class="entry">
+ <figure><img src="images/print-04.jpg" alt="Polianthes" />
+ <figcaption>Polianthes</figcaption>
+ </figure>
+ </div>
+ <div class="entry">
+ <figure><img src="images/print-05.jpg" alt="Ficus" />
+ <figcaption>Ficus</figcaption>
+ </figure>
+ </div>
+ <div class="entry">
+ <figure><img src="images/print-06.jpg" alt="Dendrobium" />
+ <figcaption>Dendrobium</figcaption>
+ </figure>
+ </div>
+ </div>
+</body>
+</html>
+  This is the example in code what you should have to do to create a css gallry layout.
